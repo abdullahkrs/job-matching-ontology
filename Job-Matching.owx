@@ -1,0 +1,1217 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://example.org/jobmatch"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://example.org/jobmatch">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Application"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Candidate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Company"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FullTimeJob"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JobPosting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PartTimeJob"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Recruiter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skill"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#applicationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#appliesTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSkill"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#locatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#madeBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#postedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requiresSkill"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#worksFor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#applicationDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#applicationStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#candidateEmail"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#candidateName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#companyName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#locationName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#postingDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#salaryRange"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#skillLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#skillName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#yearsOfExperience"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AbdullahAlshibliCandidate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AbuDhabi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AcmeCorp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AliceCandidate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#App_Alice_SE1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#App_Khalid_DevOps3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#App_Omar_Data1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#App_Sara_PM2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BuildIt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CloudComputingSkill"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CloudWorks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CommunicationSkill"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DataAnalysisSkill"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DataAnalystFT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DataCorp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DevOpsEngineerContract"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dubai"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JavaProgrammingSkill"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KhalidRemoteCandidate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LinuxAdministrationSkill"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OmarKhalidCandidate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProjectManagementSkill"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProjectManagerPermanent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PythonProgrammingSkill"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Remote"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RemotePythonDevFT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SQLSkill"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SaraAlMansouriCandidate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SaraRecruiter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SoftwareEngineerFT1"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Candidate"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FullTimeJob"/>
+        <Class IRI="#JobPosting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PartTimeJob"/>
+        <Class IRI="#JobPosting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recruiter"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Candidate"/>
+        <NamedIndividual IRI="#AbdullahAlshibliCandidate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#AbuDhabi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#AcmeCorp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Candidate"/>
+        <NamedIndividual IRI="#AliceCandidate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Application"/>
+        <NamedIndividual IRI="#App_Alice_SE1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Application"/>
+        <NamedIndividual IRI="#App_Khalid_DevOps3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Application"/>
+        <NamedIndividual IRI="#App_Omar_Data1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Application"/>
+        <NamedIndividual IRI="#App_Sara_PM2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#BuildIt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Skill"/>
+        <NamedIndividual IRI="#CloudComputingSkill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#CloudWorks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Skill"/>
+        <NamedIndividual IRI="#CommunicationSkill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Skill"/>
+        <NamedIndividual IRI="#DataAnalysisSkill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FullTimeJob"/>
+        <NamedIndividual IRI="#DataAnalystFT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#DataCorp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PartTimeJob"/>
+        <NamedIndividual IRI="#DevOpsEngineerContract"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Dubai"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Skill"/>
+        <NamedIndividual IRI="#JavaProgrammingSkill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Candidate"/>
+        <NamedIndividual IRI="#KhalidRemoteCandidate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Skill"/>
+        <NamedIndividual IRI="#LinuxAdministrationSkill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Candidate"/>
+        <NamedIndividual IRI="#OmarKhalidCandidate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Skill"/>
+        <NamedIndividual IRI="#ProjectManagementSkill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FullTimeJob"/>
+        <NamedIndividual IRI="#ProjectManagerPermanent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Skill"/>
+        <NamedIndividual IRI="#PythonProgrammingSkill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Remote"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FullTimeJob"/>
+        <NamedIndividual IRI="#RemotePythonDevFT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Skill"/>
+        <NamedIndividual IRI="#SQLSkill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Candidate"/>
+        <NamedIndividual IRI="#SaraAlMansouriCandidate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Recruiter"/>
+        <NamedIndividual IRI="#SaraRecruiter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FullTimeJob"/>
+        <NamedIndividual IRI="#SoftwareEngineerFT1"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSkill"/>
+        <NamedIndividual IRI="#AbdullahAlshibliCandidate"/>
+        <NamedIndividual IRI="#PythonProgrammingSkill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#locatedIn"/>
+        <NamedIndividual IRI="#AbdullahAlshibliCandidate"/>
+        <NamedIndividual IRI="#Remote"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesTo"/>
+        <NamedIndividual IRI="#AliceCandidate"/>
+        <NamedIndividual IRI="#SoftwareEngineerFT1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSkill"/>
+        <NamedIndividual IRI="#AliceCandidate"/>
+        <NamedIndividual IRI="#JavaProgrammingSkill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#locatedIn"/>
+        <NamedIndividual IRI="#AliceCandidate"/>
+        <NamedIndividual IRI="#Dubai"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#applicationOf"/>
+        <NamedIndividual IRI="#App_Alice_SE1"/>
+        <NamedIndividual IRI="#SoftwareEngineerFT1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#App_Alice_SE1"/>
+        <NamedIndividual IRI="#AliceCandidate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#applicationOf"/>
+        <NamedIndividual IRI="#App_Khalid_DevOps3"/>
+        <NamedIndividual IRI="#DevOpsEngineerContract"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#App_Khalid_DevOps3"/>
+        <NamedIndividual IRI="#KhalidRemoteCandidate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#applicationOf"/>
+        <NamedIndividual IRI="#App_Omar_Data1"/>
+        <NamedIndividual IRI="#DataAnalystFT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#App_Omar_Data1"/>
+        <NamedIndividual IRI="#OmarKhalidCandidate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#applicationOf"/>
+        <NamedIndividual IRI="#App_Sara_PM2"/>
+        <NamedIndividual IRI="#ProjectManagerPermanent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#App_Sara_PM2"/>
+        <NamedIndividual IRI="#SaraAlMansouriCandidate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#locatedIn"/>
+        <NamedIndividual IRI="#DataAnalystFT"/>
+        <NamedIndividual IRI="#AbuDhabi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#postedBy"/>
+        <NamedIndividual IRI="#DataAnalystFT"/>
+        <NamedIndividual IRI="#DataCorp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresSkill"/>
+        <NamedIndividual IRI="#DataAnalystFT"/>
+        <NamedIndividual IRI="#DataAnalysisSkill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresSkill"/>
+        <NamedIndividual IRI="#DataAnalystFT"/>
+        <NamedIndividual IRI="#SQLSkill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#locatedIn"/>
+        <NamedIndividual IRI="#DevOpsEngineerContract"/>
+        <NamedIndividual IRI="#Remote"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#postedBy"/>
+        <NamedIndividual IRI="#DevOpsEngineerContract"/>
+        <NamedIndividual IRI="#CloudWorks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresSkill"/>
+        <NamedIndividual IRI="#DevOpsEngineerContract"/>
+        <NamedIndividual IRI="#CloudComputingSkill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresSkill"/>
+        <NamedIndividual IRI="#DevOpsEngineerContract"/>
+        <NamedIndividual IRI="#LinuxAdministrationSkill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSkill"/>
+        <NamedIndividual IRI="#KhalidRemoteCandidate"/>
+        <NamedIndividual IRI="#CloudComputingSkill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSkill"/>
+        <NamedIndividual IRI="#KhalidRemoteCandidate"/>
+        <NamedIndividual IRI="#JavaProgrammingSkill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#locatedIn"/>
+        <NamedIndividual IRI="#KhalidRemoteCandidate"/>
+        <NamedIndividual IRI="#Remote"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSkill"/>
+        <NamedIndividual IRI="#OmarKhalidCandidate"/>
+        <NamedIndividual IRI="#DataAnalysisSkill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSkill"/>
+        <NamedIndividual IRI="#OmarKhalidCandidate"/>
+        <NamedIndividual IRI="#PythonProgrammingSkill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#locatedIn"/>
+        <NamedIndividual IRI="#OmarKhalidCandidate"/>
+        <NamedIndividual IRI="#AbuDhabi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#locatedIn"/>
+        <NamedIndividual IRI="#ProjectManagerPermanent"/>
+        <NamedIndividual IRI="#Dubai"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#postedBy"/>
+        <NamedIndividual IRI="#ProjectManagerPermanent"/>
+        <NamedIndividual IRI="#SaraRecruiter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresSkill"/>
+        <NamedIndividual IRI="#ProjectManagerPermanent"/>
+        <NamedIndividual IRI="#CommunicationSkill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresSkill"/>
+        <NamedIndividual IRI="#ProjectManagerPermanent"/>
+        <NamedIndividual IRI="#ProjectManagementSkill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#locatedIn"/>
+        <NamedIndividual IRI="#RemotePythonDevFT"/>
+        <NamedIndividual IRI="#Remote"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#postedBy"/>
+        <NamedIndividual IRI="#RemotePythonDevFT"/>
+        <NamedIndividual IRI="#CloudWorks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresSkill"/>
+        <NamedIndividual IRI="#RemotePythonDevFT"/>
+        <NamedIndividual IRI="#PythonProgrammingSkill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSkill"/>
+        <NamedIndividual IRI="#SaraAlMansouriCandidate"/>
+        <NamedIndividual IRI="#CommunicationSkill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSkill"/>
+        <NamedIndividual IRI="#SaraAlMansouriCandidate"/>
+        <NamedIndividual IRI="#ProjectManagementSkill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#locatedIn"/>
+        <NamedIndividual IRI="#SaraAlMansouriCandidate"/>
+        <NamedIndividual IRI="#Dubai"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#SaraRecruiter"/>
+        <NamedIndividual IRI="#BuildIt"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#locatedIn"/>
+        <NamedIndividual IRI="#SoftwareEngineerFT1"/>
+        <NamedIndividual IRI="#Dubai"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#postedBy"/>
+        <NamedIndividual IRI="#SoftwareEngineerFT1"/>
+        <NamedIndividual IRI="#AcmeCorp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresSkill"/>
+        <NamedIndividual IRI="#SoftwareEngineerFT1"/>
+        <NamedIndividual IRI="#JavaProgrammingSkill"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#candidateEmail"/>
+        <NamedIndividual IRI="#AbdullahAlshibliCandidate"/>
+        <Literal>abdullahalshibli64@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#candidateName"/>
+        <NamedIndividual IRI="#AbdullahAlshibliCandidate"/>
+        <Literal>Abdullah Alshibli</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yearsOfExperience"/>
+        <NamedIndividual IRI="#AbdullahAlshibliCandidate"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#locationName"/>
+        <NamedIndividual IRI="#AbuDhabi"/>
+        <Literal>AbuDhabi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#companyName"/>
+        <NamedIndividual IRI="#AcmeCorp"/>
+        <Literal>Acme Corp</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#candidateEmail"/>
+        <NamedIndividual IRI="#AliceCandidate"/>
+        <Literal>alice.smith@domain.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#candidateName"/>
+        <NamedIndividual IRI="#AliceCandidate"/>
+        <Literal>Alice Smith</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yearsOfExperience"/>
+        <NamedIndividual IRI="#AliceCandidate"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#applicationDate"/>
+        <NamedIndividual IRI="#App_Alice_SE1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-09T13:45:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#applicationStatus"/>
+        <NamedIndividual IRI="#App_Alice_SE1"/>
+        <Literal>Submitted</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#applicationDate"/>
+        <NamedIndividual IRI="#App_Khalid_DevOps3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-09T13:45:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#applicationStatus"/>
+        <NamedIndividual IRI="#App_Khalid_DevOps3"/>
+        <Literal>Submitted</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#applicationDate"/>
+        <NamedIndividual IRI="#App_Omar_Data1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-11T09:30:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#applicationStatus"/>
+        <NamedIndividual IRI="#App_Omar_Data1"/>
+        <Literal>Reviewed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#applicationDate"/>
+        <NamedIndividual IRI="#App_Sara_PM2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-09T14:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#applicationStatus"/>
+        <NamedIndividual IRI="#App_Sara_PM2"/>
+        <Literal>Rejected</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#companyName"/>
+        <NamedIndividual IRI="#BuildIt"/>
+        <Literal>BuildIt Ltd</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#skillLevel"/>
+        <NamedIndividual IRI="#CloudComputingSkill"/>
+        <Literal>Expert</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#skillName"/>
+        <NamedIndividual IRI="#CloudComputingSkill"/>
+        <Literal>CloudComputing</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#companyName"/>
+        <NamedIndividual IRI="#CloudWorks"/>
+        <Literal>Cloud Works</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#skillLevel"/>
+        <NamedIndividual IRI="#CommunicationSkill"/>
+        <Literal>Expert</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#skillName"/>
+        <NamedIndividual IRI="#CommunicationSkill"/>
+        <Literal>Communication</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#skillLevel"/>
+        <NamedIndividual IRI="#DataAnalysisSkill"/>
+        <Literal>Expert</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#skillName"/>
+        <NamedIndividual IRI="#DataAnalysisSkill"/>
+        <Literal>DataAnalysis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#postingDate"/>
+        <NamedIndividual IRI="#DataAnalystFT"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-10T09:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salaryRange"/>
+        <NamedIndividual IRI="#DataAnalystFT"/>
+        <Literal>50–70k AED</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#companyName"/>
+        <NamedIndividual IRI="#DataCorp"/>
+        <Literal>Data Corp</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#postingDate"/>
+        <NamedIndividual IRI="#DevOpsEngineerContract"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-12T14:30:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salaryRange"/>
+        <NamedIndividual IRI="#DevOpsEngineerContract"/>
+        <Literal>80–100k</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#locationName"/>
+        <NamedIndividual IRI="#Dubai"/>
+        <Literal>Dubai</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#skillLevel"/>
+        <NamedIndividual IRI="#JavaProgrammingSkill"/>
+        <Literal>Intermediate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#skillLevel"/>
+        <NamedIndividual IRI="#JavaProgrammingSkill"/>
+        <Literal>JavaProgramming</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#candidateEmail"/>
+        <NamedIndividual IRI="#KhalidRemoteCandidate"/>
+        <Literal>khalid.r@domain.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#candidateName"/>
+        <NamedIndividual IRI="#KhalidRemoteCandidate"/>
+        <Literal>Khalid Remote</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yearsOfExperience"/>
+        <NamedIndividual IRI="#KhalidRemoteCandidate"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#skillLevel"/>
+        <NamedIndividual IRI="#LinuxAdministrationSkill"/>
+        <Literal>Expert</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#skillName"/>
+        <NamedIndividual IRI="#LinuxAdministrationSkill"/>
+        <Literal>LinuxAdministration</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#candidateEmail"/>
+        <NamedIndividual IRI="#OmarKhalidCandidate"/>
+        <Literal>omar.k@domain.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#candidateName"/>
+        <NamedIndividual IRI="#OmarKhalidCandidate"/>
+        <Literal>Omar Khalid</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yearsOfExperience"/>
+        <NamedIndividual IRI="#OmarKhalidCandidate"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#skillLevel"/>
+        <NamedIndividual IRI="#ProjectManagementSkill"/>
+        <Literal>Expert</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#skillName"/>
+        <NamedIndividual IRI="#ProjectManagementSkill"/>
+        <Literal>ProjectManagement</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#postingDate"/>
+        <NamedIndividual IRI="#ProjectManagerPermanent"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-08T11:15:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salaryRange"/>
+        <NamedIndividual IRI="#ProjectManagerPermanent"/>
+        <Literal>120–140k AED</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#skillLevel"/>
+        <NamedIndividual IRI="#PythonProgrammingSkill"/>
+        <Literal>Expert</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#skillName"/>
+        <NamedIndividual IRI="#PythonProgrammingSkill"/>
+        <Literal>PythonProgramming</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#locationName"/>
+        <NamedIndividual IRI="#Remote"/>
+        <Literal>Remote</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#postingDate"/>
+        <NamedIndividual IRI="#RemotePythonDevFT"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-15T10:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salaryRange"/>
+        <NamedIndividual IRI="#RemotePythonDevFT"/>
+        <Literal>100–120k AED</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#skillLevel"/>
+        <NamedIndividual IRI="#SQLSkill"/>
+        <Literal>Expert</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#skillName"/>
+        <NamedIndividual IRI="#SQLSkill"/>
+        <Literal>SQL</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#candidateEmail"/>
+        <NamedIndividual IRI="#SaraAlMansouriCandidate"/>
+        <Literal>sara.m@domain.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#candidateName"/>
+        <NamedIndividual IRI="#SaraAlMansouriCandidate"/>
+        <Literal>Sara Al Mansouri</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yearsOfExperience"/>
+        <NamedIndividual IRI="#SaraAlMansouriCandidate"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#candidateEmail"/>
+        <NamedIndividual IRI="#SaraRecruiter"/>
+        <Literal>sara.r@domain.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#candidateName"/>
+        <NamedIndividual IRI="#SaraRecruiter"/>
+        <Literal>Sara Al Mansouri</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#postingDate"/>
+        <NamedIndividual IRI="#SoftwareEngineerFT1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-08T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salaryRange"/>
+        <NamedIndividual IRI="#SoftwareEngineerFT1"/>
+        <Literal>60–80k AED</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#applicationOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#appliesTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSkill"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#locatedIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#madeBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#postedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#requiresSkill"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#worksFor"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#applicationOf"/>
+        <Class IRI="#Application"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#appliesTo"/>
+        <Class IRI="#Candidate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSkill"/>
+        <Class IRI="#Candidate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#madeBy"/>
+        <Class IRI="#Application"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#postedBy"/>
+        <Class IRI="#JobPosting"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requiresSkill"/>
+        <Class IRI="#JobPosting"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#worksFor"/>
+        <Class IRI="#Recruiter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#applicationOf"/>
+        <Class IRI="#JobPosting"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#appliesTo"/>
+        <Class IRI="#JobPosting"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSkill"/>
+        <Class IRI="#Skill"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#locatedIn"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#madeBy"/>
+        <Class IRI="#Candidate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#postedBy"/>
+        <Class IRI="#Company"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requiresSkill"/>
+        <Class IRI="#Skill"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#worksFor"/>
+        <Class IRI="#Company"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#applicationDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#applicationStatus"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#candidateEmail"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#candidateName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#companyName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#locationName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#postingDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#salaryRange"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#skillLevel"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#skillName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#yearsOfExperience"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#applicationDate"/>
+        <Class IRI="#Application"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#applicationStatus"/>
+        <Class IRI="#Application"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#candidateEmail"/>
+        <Class IRI="#Candidate"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#candidateName"/>
+        <Class IRI="#Candidate"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#companyName"/>
+        <Class IRI="#Company"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#locationName"/>
+        <Class IRI="#Location"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#postingDate"/>
+        <Class IRI="#JobPosting"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#salaryRange"/>
+        <Class IRI="#JobPosting"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#skillLevel"/>
+        <Class IRI="#Skill"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#skillName"/>
+        <Class IRI="#Skill"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#yearsOfExperience"/>
+        <Class IRI="#Candidate"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#applicationDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#applicationStatus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#candidateEmail"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#candidateName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#companyName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#locationName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#postingDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#salaryRange"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#skillLevel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#skillName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#yearsOfExperience"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AcmeCorp</IRI>
+        <Literal>AcmeCorp</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Application</IRI>
+        <Literal>Application</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Candidate</IRI>
+        <Literal>Candidate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Company</IRI>
+        <Literal>Company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dubai</IRI>
+        <Literal>Dubai</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FullTimeJob</IRI>
+        <Literal>FullTimeJob</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#JavaProgrammingSkill</IRI>
+        <Literal>JavaProgrammingSkill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#JobPosting</IRI>
+        <Literal>JobPosting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Location</IRI>
+        <Literal>Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PartTimeJob</IRI>
+        <Literal>PartTimeJob</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Person</IRI>
+        <Literal>Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Recruiter</IRI>
+        <Literal>Recruiter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Skill</IRI>
+        <Literal>Skill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SoftwareEngineerFT1</IRI>
+        <Literal>SoftwareEngineerFT1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#applicationDate</IRI>
+        <Literal>applicationDate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#applicationOf</IRI>
+        <Literal>Which job this application refers to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#applicationStatus</IRI>
+        <Literal>applicationStatus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#appliesTo</IRI>
+        <Literal>Connects a candidate to a job they have applied for.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#appliesTo</IRI>
+        <Literal>appliesTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#candidateEmail</IRI>
+        <Literal>candidateEmail</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#candidateName</IRI>
+        <Literal>candidateName</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#companyName</IRI>
+        <Literal>companyName</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSkill</IRI>
+        <Literal>Links a candidate to one of their skills.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#locatedIn</IRI>
+        <Literal>Geographical location of the job or candidate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#locationName</IRI>
+        <Literal>locationName</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#madeBy</IRI>
+        <Literal>Which candidate made this application.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#postedBy</IRI>
+        <Literal>Indicates which company published the job.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#postingDate</IRI>
+        <Literal>postingDate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#requiresSkill</IRI>
+        <Literal>Links a job posting to a required skill.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#salaryRange</IRI>
+        <Literal>salaryRange</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#skillLevel</IRI>
+        <Literal>skillLevel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#skillName</IRI>
+        <Literal>skillName</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#yearsOfExperience</IRI>
+        <Literal>yearsOfExperience</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
